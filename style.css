@@ -6,11 +6,289 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 200px 1fr;
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#search-icon{
+    font-size: 2rem;
+}
+
+#search-bar{
+    width: 80%;
+    height: 30px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: none;
+    outline: 1px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-img{
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 34px;
+ }
+
+.user-name{
+     display: inline;
+     font-size: 1.3rem;
+     font-weight: bold;
+ }
+
+.intro{
+    display: flex;
+    margin-left: 50px; 
+    align-items: center;
+    gap: 30px;
+}
+
+h1, .hi{
+    margin: 0;
+}
+
+.intro-img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    
+}
+
+.new,
+.upload,
+.share{
+    border: none;
+    background-color: #54BAB9;
+    color: #fff;
+    padding: 8px 35px;
+    font-size: 1rem;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+button{
+    transition: 0.4s ease;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+button:focus{
+    outline: 0;
+}
+
+.sidebar{
+    grid-row: 1 / 3;
+    background-color: #54BAB9;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title{
+    padding: 8px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo{
+    color: white;
+    font-size: 3rem;
+}
+
+.title-text{
+    display: inline;
+    margin: 0;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.item-text{
+    display: inline;
+    font-size: 1.3rem;
+}
+
+.item-text, .nav-icon, .brand-icon {
+    color: #fff;
+}
+
+.item-text.active{
+    font-weight: bold;
+}
+
+.header{
+    grid-column: 2 / 3;
+    background-color: #F7ECDE;
+}
+
+.main-content{
+    background-color: #FBF8F1;
+    display: flex;
+}
+
+.projects{
+    width: 70%;
+    padding: 16px;
+}
+
+h3{
+    margin: 0;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 16px;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    padding: 8px;
+    background-color: #fff;
+    border-left: 8px solid #54BAB9;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.info-icons{
+    width: min-content;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.news{
+    width: 30%;
+    padding: 16px;
+}
+
+.announcements{
+    padding: 16px;
+}
+
+.announcement-card{
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h5{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.announcement-desc{
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.material-icons{
+    font-size: 1.3rem;
+}
+
+.trending-title{
+    margin-top: 15px;
+}
+
+.trending{
+    padding: 16px;
+}
+
+.trending-card{
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.name,
+.bio{
+    margin: 0;
+}
+
+.name{
+    margin-bottom: 5px;
+}
+
+.bio{
+    font-size: 0.8rem;
+    color:rgb(0, 0, 0, 0.5);
 }

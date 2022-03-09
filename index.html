@@ -4,16 +4,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" /> -->
+    <script src="https://kit.fontawesome.com/3158290ace.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Project</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Project Starter</h1>
-    <script src="script.js"></script>
+    <div class="header">
+        <div class="search">
+            <span id="search-icon" class="material-icons">
+                search
+            </span>
+            <input id="search-bar" type="search">
+        </div>
+        <div class="profile">
+            <span class="material-icons">
+                notifications_active
+            </span>
+            <img class="profile-img" src="assets/gradienta-A8he8ah9suQ-unsplash.jpg" alt="">
+            <p class="user-name">Rishikrishna</p>
+        </div>
+        <div class="intro">
+            <img class="intro-img" src="assets/gradienta-A8he8ah9suQ-unsplash.jpg" alt="">
+            <div class="intro-text">
+                <p class="hi">Hi there,</p>
+                <h1>Rishikrishna (@rishi)</h1>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="new">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <span id="logo" class="material-icons">
+                dashboard
+            </span>
+            <h1 class="title-text">Dashboard</h1>
+        </div>
+
+        <div class="navigation">
+            <ul class="navigation-list">
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        home
+                    </span>
+                    <p class="active item-text">Home</p>
+                </li>
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        <i class="fa-solid fa-address-card"></i>
+                    </span>
+                    <p class="item-text">Profile</p>
+                </li>
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        mode_comment
+                    </span>
+                    <p class="item-text">Messages</p>
+                </li>
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        history
+                    </span>
+                    <p class="item-text">History</p>
+                </li>
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        history
+                    </span>
+                    <p class="item-text">Tasks</p>
+                </li>
+                <li class="list-item">
+                    <span class="material-icons nav-icon">
+                        groups
+                    </span>
+                    <p class="item-text">Communities</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="branding">
+            <ul>
+                <li>
+                    <span class="material-icons brand-icon">
+                        settings
+                    </span>
+                    <p class="item-text">Settings</p>
+                </li>
+                <li>
+                    <span class="material-icons brand-icon">
+                        help_center
+                    </span>
+                    <p class="item-text">Support</p>
+                </li>
+                <li>
+                    <span class="material-icons brand-icon">
+                        verified_user
+                    </span>
+                    <p class="item-text">Privacy</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="project-cards">
+                <div class="card">
+                    <h3 class="project-title">Super Cool Project</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam
+                        hic nostrum veniam. Quibusdam, possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Less Cool Project</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Nft App</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Impossible App</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Ad Blocker</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Easy peasy App</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Money Maker</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum itaque,
+                        perferendis provident
+                        beatae error, id quae modi doloribus voluptatem quidem, quis facere a quam hic nostrum veniam.
+                        Quibusdam,
+                        possimus?</p>
+                    <div class="info-icons">
+                        <span class="material-icons">
+                            bookmark_add
+                        </span>
+                        <span class="material-icons">
+                            share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <h3 class="announcement-title">Announcements</h3>
+            <div class="announcements">
+                <div class="announcement-card">
+                    <div>
+                        <h5>Site maintenance</h5>
+                        <p class="announcement-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos reprehenderit neque dolores modi maiores voluptas nihil, quibusdam, voluptatibus
+                            error officia quis nesciunt vel, doloribus nulla ipsam itaque eum. Porro, ea.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h5>Updated Privacy Policy</h5>
+                        <p class="announcement-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos reprehenderit
+                            neque dolores modi maiores voluptas nihil, quibusdam, voluptatibus error officia quis
+                            nesciunt vel, doloribus
+                            nulla ipsam itaque eum. Porro, ea.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h5>Community Share day</h5>
+                        <p class="announcement-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos reprehenderit
+                            neque dolores modi maiores voluptas nihil, quibusdam, voluptatibus error officia quis
+                            nesciunt vel, doloribus
+                            nulla ipsam itaque eum. Porro, ea.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="trending-title">Trending</h3>
+            <div class="trending">
+                <div class="trending-card">
+                    <div class="person">
+                        <img class="profile-img" src="assets/gradienta-A8he8ah9suQ-unsplash.jpg" alt="">
+                        <div class="info">
+                            <p class="name">@rishi</p>
+                            <p class="bio">Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <img class="profile-img" src="assets/gradienta-A8he8ah9suQ-unsplash.jpg" alt="">
+                        <div class="info">
+                            <p class="name">@tenten</p>
+                            <p class="bio">Drawer</p>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <img class="profile-img" src="assets/gradienta-A8he8ah9suQ-unsplash.jpg" alt="">
+                        <div class="info">
+                            <p class="name">@sakura</p>
+                            <p class="bio">Strength</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
